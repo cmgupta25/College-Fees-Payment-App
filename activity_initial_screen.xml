@@ -1,0 +1,165 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:ads="http://schemas.android.com/apk/res-auto"
+	android:layout_height="match_parent"
+    android:background="#41546c"
+	>
+
+
+<ScrollView
+	android:id="@+id/scrollView1"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="left"
+		android:padding="15dp"
+		android:orientation="vertical" >
+
+		<TextView
+			android:id="@+id/taccessCode"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:paddingLeft="10dp"
+			android:text="@string/access_code" />
+
+		<EditText
+			android:id="@+id/accessCode"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:text="4YRUXLSRO20O8NIH" >
+			<requestFocus />
+		</EditText>
+
+		<TextView
+			android:id="@+id/tmerchantId"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:paddingLeft="10dp"
+			android:text="@string/merchant_id" />
+
+		<EditText
+			android:id="@+id/merchantId"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:text="2"
+			/>
+
+		<TextView
+			android:id="@+id/torderId"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:paddingLeft="10dp"
+			android:text="Order Id" />
+
+		<EditText
+			android:id="@+id/orderId"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:focusable="false"
+			/>
+
+		<TextView
+			android:id="@+id/tcurrency"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:paddingLeft="10dp"
+			android:text="@string/currency" />
+
+		<EditText
+			android:id="@+id/currency"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:text="INR"
+			android:focusable="false"/>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:paddingLeft="10dp"
+			android:text="@string/amount" />
+
+		<EditText
+			android:id="@+id/amount"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:hint="@string/Rs"
+			android:inputType="number"
+			android:focusable="false"/>
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25sp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/rounded_corners_signin"
+            android:text="@string/pay_button" />
+
+		<TextView
+			android:id="@+id/tredirectUrl"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:paddingLeft="10dp"
+			android:text="@string/redirect_url" />
+
+		<EditText
+			android:id="@+id/redirectUrl"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:inputType="textUri"
+			android:text="http://122.182.6.216/merchant/ccavResponseHandler.jsp"
+			/>
+
+		<TextView
+			android:id="@+id/tcancelUrl"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:paddingLeft="10dp"
+			android:text="@string/cancel_url" />
+
+		<EditText
+			android:id="@+id/cancelUrl"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:inputType="textUri"
+			android:text="http://122.182.6.216/merchant/ccavResponseHandler.jsp" />
+
+		<TextView
+			android:id="@+id/trsaUrl"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:paddingLeft="10dp"
+			android:text="@string/rsa_url" />
+
+		<EditText
+			android:id="@+id/rsaUrl"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:inputType="textUri"
+			android:text="https://secure.ccavenue.com/transaction/jsp/GetRSA.jsp" />
+
+	</LinearLayout>
+</ScrollView>
+
+</RelativeLayout>

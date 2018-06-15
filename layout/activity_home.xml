@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBack"
+    tools:context="com.project.esh_an.vemanafeeportal.HomeActivity">
+
+    <ImageView
+        android:id="@+id/clglogo"
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5sp"
+        app:srcCompat="@drawable/logo"
+        android:background="@drawable/shadow"/>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/rounded_corners_signin"
+        android:text="Proceed to Login"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_marginStart="30sp"
+        android:layout_marginEnd="30sp"/>
+
+
+<android.support.v4.view.ViewPager
+    android:layout_width="match_parent"
+    android:layout_height="280sp"
+    android:layout_marginTop="215sp"
+    android:layout_marginBottom="8dp"
+    android:id="@+id/viewPager">
+
+</android.support.v4.view.ViewPager>
+    <LinearLayout
+        android:id="@+id/SliderDots"
+        android:layout_marginTop="480sp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+</RelativeLayout>

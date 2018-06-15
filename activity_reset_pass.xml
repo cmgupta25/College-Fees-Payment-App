@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBack"
+    android:fitsSystemWindows="true"
+    android:padding="10sp"
+    tools:context="com.project.esh_an.vemanafeeportal.add_on.resetPass">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="550sp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/round_window_down"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="180sp"
+            app:srcCompat="@drawable/fgtimg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:text="Forgot Password ?"
+            android:textColor="@android:color/black"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/roundcorners"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="15sp"
+            android:textColor="@android:color/white"
+            android:textColorHint="#818181" />
+
+        <!-- Login Button -->
+
+        <Button
+            android:id="@+id/btn_reset_password"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/rounded_corners_signin"
+            android:text="Reset Password"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:textStyle="bold"
+            android:text="Back"
+            android:textColor="@color/black_overlay" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone"/>
+
+</android.support.design.widget.CoordinatorLayout>
